@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>중세 모험</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <h1>중세 모험기</h1>
+        <p class="game-subtitle">운명을 결정하는 텍스트 기반 모험</p>
+      </header>
+
+      <section id="name-screen" class="panel">
+        <p>
+          용사여, 당신의 이름을 밝혀 주세요. 왕국은 새로운 영웅의 탄생을
+          기다리고 있습니다.
+        </p>
+        <form id="name-form" class="name-form">
+          <label class="sr-only" for="hero-name">이름 입력</label>
+          <input
+            id="hero-name"
+            name="hero-name"
+            type="text"
+            maxlength="18"
+            placeholder="예: 아르노"
+            required
+            autocomplete="off"
+          />
+          <button type="submit">운명 받아들이기</button>
+        </form>
+      </section>
+
+      <section id="story-screen" class="panel hidden">
+        <div id="story-log" class="story-log" aria-live="polite"></div>
+        <div id="choice-list" class="choice-list"></div>
+      </section>
+    </main>
+
+    <footer class="game-footer">
+      <small>ⓒ 2024 왕국 연대기</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
