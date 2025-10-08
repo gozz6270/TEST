@@ -1,13 +1,11 @@
-"""Entry point for the Air Skirmish text adventure."""
-
+"""Entry point for the Medieval Quest text adventure."""
 from __future__ import annotations
 
-from air_skirmish.game import Game
+from medieval_quest import Game
 
 
 def main() -> None:
-    """Run the Air Skirmish game."""
-
+    """Run the Medieval Quest game."""
     Game().run()
 
 
